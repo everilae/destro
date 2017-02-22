@@ -7,6 +7,7 @@ Examples
 --------
 
 ```javascript
+> const match = require('destro');
 > match({ foo: 1 },
 ...     ({ bar }) => 'got bar',
 ...     ({ foo }) => 'got foo')
