@@ -21,6 +21,20 @@ Examples
 'just right'
 ```
 
+```javascript
+> match({ noMatchForMe: 1 },
+...     ({ foo }) => foo)
+Error
+    at NoMatchError.Error (native)
+```
+
+```javascript
+> match({ noMatchForMe: 1 },
+...     ({ foo }) => foo,
+...     () => '...but I, the default')
+'...but I, the default'
+```
+
 TODO
 ----
 
