@@ -12,3 +12,15 @@ Examples
 ...     ({ foo }) => 'got foo')
 'got foo'
 ```
+
+```javascript
+> match([ 1, 2 ],
+...     ([ x, y, z ]) => 'too many!',
+...     ([ x, y ]) => 'just right')
+'just right'
+```
+
+TODO
+----
+
+- Array `...rest` spread support
