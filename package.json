@@ -1,0 +1,23 @@
+{
+  "name": "destro",
+  "version": "0.0.1",
+  "description": "Functional style pattern matching with ES6 destructuring.",
+  "main": "destro.js",
+  "scripts": {
+    "build": "babel -d lib/ src/",
+    "test": "npm run build && mocha --compilers js:babel-core/register --require babel-polyfill"
+  },
+  "author": "Ilja Everilä",
+  "license": "ISC",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "mocha": "^3.2.0"
+  }
+}
